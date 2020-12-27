@@ -1,6 +1,7 @@
 package com.prajwal;
 
 //importing the scanner class
+import java.util.Random;
 import java.util.Scanner;
 
 public class temperatureconversion
@@ -24,31 +25,12 @@ public class temperatureconversion
 
             if (userinput == 1)
             {
-                float tempF;
-                float celcTemp;
-
-                System.out.print("Please enter the temperature in Fahrenheit: ");
-                tempF = keyboard.nextFloat();
-
-                celcTemp = (tempF - 32)*5/9;
-
-                System.out.printf("%.1f degree Fahrenheit is %.1f degree Celsius.\n", tempF, celcTemp);
-                System.out.println(" ");
+                FtoC();
             }
 
             else if (userinput == 2)
             {
-                float tempC;
-                float fTemp;
-
-                System.out.print("Please enter the temperature in Celsius: ");
-                tempC = keyboard.nextFloat();
-
-                fTemp = (float) ((1.8 * tempC) + 32);
-
-                System.out.printf("%.1f degree Celsius is %.1f degree Fahrenheit", tempC, fTemp);
-                System.out.println(" ");
-
+                CtoF();
             }
 
             else if (userinput == 3)
@@ -64,5 +46,35 @@ public class temperatureconversion
                 System.out.println("Wrong input. Please try again.\n");
             }
         }
+    }
+
+    static void FtoC()
+    {
+        float tempF;
+        float celcTemp;
+
+        System.out.print("Please enter the temperature in Fahrenheit: ");
+        Scanner fahrenheitReader = new Scanner(System.in);
+        tempF = fahrenheitReader.nextFloat();
+
+        celcTemp = (tempF - 32)*5/9;
+
+        System.out.printf("%.1f degree Fahrenheit is %.1f degree Celsius.\n", tempF, celcTemp);
+        System.out.println(" ");
+    }
+
+    static void CtoF()
+    {
+        float tempC;
+        float fTemp;
+
+        System.out.print("Please enter the temperature in Celsius: ");
+        Scanner celsiusReader = new Scanner(System.in);
+        tempC = celsiusReader.nextFloat();
+
+        fTemp = (float) ((1.8 * tempC) + 32);
+
+        System.out.printf("%.1f degree Celsius is %.1f degree Fahrenheit", tempC, fTemp);
+        System.out.println(" ");
     }
 }
