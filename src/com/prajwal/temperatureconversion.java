@@ -1,17 +1,19 @@
 package com.prajwal;
 
 //importing the scanner class
-import java.util.Random;
 import java.util.Scanner;
 
+//starting of the  public class
 public class temperatureconversion
 {
+    //starting of main
     public static void main(String[] args)
     {
         int userinput;
 
         while (true)
         {
+            //printing  the program outline
             System.out.println("****************************************************");
             System.out.println("Temperature Conversion Program");
             System.out.println("1. Convert F to C");
@@ -47,7 +49,8 @@ public class temperatureconversion
             }
         }
     }
-
+    
+    //function to convert Fahrenheit into Celsius
     static void FtoC()
     {
         float tempF;
@@ -62,7 +65,8 @@ public class temperatureconversion
         System.out.printf("%.1f degree Fahrenheit is %.1f degree Celsius.\n", tempF, celcTemp);
         System.out.println(" ");
     }
-
+    
+    //function to convert Celsius into Fahrenheit
     static void CtoF()
     {
         float tempC;
