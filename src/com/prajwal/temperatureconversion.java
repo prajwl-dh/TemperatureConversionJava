@@ -1,7 +1,7 @@
 package com.prajwal;
 
 //importing the scanner class
-import java.util.Scanner;
+import java.util.*;
 
 //starting of the  public class
 public class temperatureconversion
