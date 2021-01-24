@@ -51,7 +51,7 @@ public class temperatureconversion
     }
     
     //function to convert Fahrenheit into Celsius
-    static void FtoC()
+    public static void FtoC()
     {
         float tempF;
         float celcTemp;
@@ -67,7 +67,7 @@ public class temperatureconversion
     }
     
     //function to convert Celsius into Fahrenheit
-    static void CtoF()
+    public static void CtoF()
     {
         float tempC;
         float fTemp;
