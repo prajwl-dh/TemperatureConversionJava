@@ -62,7 +62,7 @@ public class temperatureconversion
 
         celcTemp = (tempF - 32)*5/9;
 
-        System.out.printf("%.1f degree Fahrenheit is %.1f degree Celsius.\n", tempF, celcTemp);
+        System.out.printf("\n%.1f degree Fahrenheit is %.1f degree Celsius.\n", tempF, celcTemp);
         System.out.println(" ");
     }
     
